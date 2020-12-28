@@ -4,13 +4,8 @@ from flask_login import current_user, login_user, logout_user, login_required
 
 # App Modules
 from app import app, db
-<<<<<<< HEAD
 from app.forms import LoginForm, RegistrationForm, EditProfileForm, EmptyForm, PostForm
 from app.models import User, Post
-=======
-from app.forms import LoginForm, RegistrationForm, EditProfileForm, EmptyForm
-from app.models import User
->>>>>>> master
 
 # Other Modules
 from werkzeug.urls import url_parse
