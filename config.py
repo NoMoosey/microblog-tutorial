@@ -24,5 +24,8 @@ class Config(object):
     # Post Config
     POSTS_PER_PAGE = 5
 
+    # Locale Settings
+    LANGUAGES = ['en', 'es']
+
     # Global Logging Level
     LOG_LEVEL = os.environ.get('LOG_LEVEL') or logging.INFO
