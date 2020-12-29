@@ -26,6 +26,7 @@ class Config(object):
 
     # Locale Settings
     LANGUAGES = ['en', 'es']
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
 
     # Global Logging Level
     LOG_LEVEL = os.environ.get('LOG_LEVEL') or logging.INFO
