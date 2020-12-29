@@ -9,3 +9,4 @@ PyJWT >= 2.0.0
 Flask-Mail >= 0.9.1
 Flask-Bootstrap >= 3.3.7.1
 Flask-Moment >= 0.11.0
+Flask_Babel >= 2.0.0
