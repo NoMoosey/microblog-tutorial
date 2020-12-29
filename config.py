@@ -1,4 +1,6 @@
 import os
+import logging
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
@@ -16,7 +18,11 @@ class Config(object):
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['joey.loesch@gmail.com']
+    ADMINS = ['joe.wr.loesch@gmail.com',
+              'joey.loesch@gmail.com']
 
     # Post Config
     POSTS_PER_PAGE = 25
+
+    # Global Logging Level
+    LOG_LEVEL = os.environ.get('LOG_LEVEL') or logging.INFO
