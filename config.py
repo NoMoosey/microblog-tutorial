@@ -22,7 +22,7 @@ class Config(object):
               'joey.loesch@gmail.com']
 
     # Post Config
-    POSTS_PER_PAGE = 25
+    POSTS_PER_PAGE = 5
 
     # Global Logging Level
     LOG_LEVEL = os.environ.get('LOG_LEVEL') or logging.INFO
