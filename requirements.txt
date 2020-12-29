@@ -8,3 +8,4 @@ email-validator >= 1.1.2
 PyJWT >= 2.0.0
 Flask-Mail >= 0.9.1
 Flask-Bootstrap >= 3.3.7.1
+Flask-Moment >= 0.11.0
