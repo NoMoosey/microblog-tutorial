@@ -32,3 +32,5 @@ class Config(object):
 
     # Global Logging Level
     LOG_LEVEL = os.environ.get('LOG_LEVEL') or logging.INFO
+
+    ELASTICSEARCH_URL='http://localhost:9200'
