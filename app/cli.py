@@ -31,5 +31,5 @@ def register(app):
     @translate.command()
     def compile():
         """Compile all languages."""
-        if os.system('pybabeli compile -d app/translations'):
+        if os.system('pybabel compile -d app/translations'):
             raise RuntimeError('compile command failed')
