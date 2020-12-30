@@ -10,7 +10,7 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
 
     # SQL DB Configuration
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://microblog:microblogpass@localhost:3306/microblog'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # E-mail notification settings
@@ -32,4 +32,4 @@ class Config(object):
     # Global Logging Level
     LOG_LEVEL = os.environ.get('LOG_LEVEL') or logging.INFO
 
-    ELASTICSEARCH_URL='http://localhost:9200'
+    ELASTICSEARCH_URL='htcatp://localhost:9200'
