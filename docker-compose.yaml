@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+
+  microblog:
+    #build: .
+    image: microblog:latest
+    container_name: microblog
+    restart: always
+    depends_on:
+      - microblog-db
+      - microblog-es
+    ports:
+      - "8000:5000"
+    environment: #todo: Add file for env variables
+
+
+  microblog-db:
+    image: mysql:latest
+    container_name: microblog-db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - "3306:3306"
+    environment: #todo: Add file for env variables
+
+  db-admin:
+    image: adminer
+    ports:
+      - "8080:8080"
+
+  microblog-es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    container_name: microblog-es
+    restart: always
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
