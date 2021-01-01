@@ -10,7 +10,9 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
 
     # SQL DB Configuration
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://microblog:microblogpass@localhost:3306/microblog'
+    SQL_USERNAME = os.environ.get('SQL_USERNAME')
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD')
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://{}:{}@localhost:3306/microblog'.format(SQL_USERNAME, SQL_PASSWORD)
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # E-mail notification settings
