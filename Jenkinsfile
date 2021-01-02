@@ -13,6 +13,7 @@ pipeline {
         echo 'Build should be fixed!'
         echo 'But will it build a new branch?'
         echo 'I guess not, maybe now?'
+        echo 'Final attempt for the eve'
       
       } 
     }
