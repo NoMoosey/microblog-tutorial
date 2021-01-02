@@ -12,6 +12,7 @@ pipeline {
         echo 'That was auto-triggered?'
         echo 'Build should be fixed!'
         echo 'But will it build a new branch?'
+        echo 'I guess not, maybe now?'
       
       } 
     }
