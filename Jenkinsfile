@@ -10,6 +10,7 @@ pipeline {
 
         echo 'This is the build stage!'
         echo 'That was auto-triggered?'
+        or lets break the build
       
       } 
     }
