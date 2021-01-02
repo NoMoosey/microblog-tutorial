@@ -11,6 +11,7 @@ pipeline {
         echo 'This is the build stage!'
         echo 'That was auto-triggered?'
         echo 'Build should be fixed!'
+        echo 'But will it build a new branch?'
       
       } 
     }
